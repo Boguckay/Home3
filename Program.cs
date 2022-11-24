@@ -8,7 +8,38 @@
 
 //23432 -> да
 
+//Console.Write("Введите число: ");
+//string? number = Console.ReadLine();
 
+//void CheckingNumber(string number){
+  //if (number[0]==number[4] || number[1]==number[3]){
+    //Console.WriteLine($"Ваше число: {number} - палиндром.");
+  //}
+  //else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+//}
+
+//if (number!.Length == 5){
+  //CheckingNumber(number);
+//}
+//else Console.WriteLine($"Введи правильное число");
+
+
+
+Console.WriteLine("Введите пятизначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+bool Palindrom()
+{
+    int num1 = number % 10;
+    int num2 = number % 100 / 10;
+    int num3 = number % 1000 / 100;
+    int num4 = number % 10000 / 1000;
+    int num5 = number / 10000;
+
+    return (num1 == num5 && num2 == num4);
+
+}
+Console.WriteLine(Palindrom() ? "Данное число палиндромом" : "Число не является палиндромом");
 
 //Задача 21
 
