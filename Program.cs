@@ -18,6 +18,24 @@
 
 //A (7,-5, 0); B (1,-1,9) -> 11.53
 
+Console.WriteLine("Введите значение x1: ");
+var x1 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите значение y1: ");
+var y1 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите значение z1: ");
+var z1 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите значение x2: ");
+var x2 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите значение y2: ");
+var y2 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите значение z2: ");
+var z2 = Convert.ToInt16(Console.ReadLine());
+
+var result = Math.Sqrt((Math.Pow((x1 - x2),2)) + (Math.Pow((y1 - y2),2)) + (Math.Pow((z1 - z2),2)));
+
+   
+Console.WriteLine(result);
+
 
 
 //Задача 23
